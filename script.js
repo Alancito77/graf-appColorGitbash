@@ -1,3 +1,4 @@
+// Alan Lugo Hernandez
 // Sliders
 const redRange = document.getElementById("redRange");
 const greenRange = document.getElementById("greenRange");
