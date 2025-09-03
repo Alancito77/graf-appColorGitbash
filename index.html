@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tonalidad RGB</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+
+        <!-- Card -->
+        <div class="card shadow-lg rounded-4 p-4 bg-white">
+          <h1 class="text-center mb-4 fw-bold text-primary">🎨 Generador RGB</h1>
+
+          <!-- Recuadro de color -->
+          <div id="colorBox" class="color-box mb-4"></div>
+
+          <!-- Códigos -->
+          <div class="text-center mb-3">
+            <p class="fs-5 mb-1">Código HEX: <span id="hexCode" class="fw-bold">#000000</span></p>
+            <p class="fs-5">Código RGB: <span id="rgbCode" class="fw-bold">rgb(0, 0, 0)</span></p>
+            <button class="btn btn-outline-primary btn-sm me-2" id="copyHex">Copiar HEX</button>
+            <button class="btn btn-outline-success btn-sm" id="copyRgb">Copiar RGB</button>
+          </div>
+
+          <!-- Color picker -->
+          <div class="mb-4">
+            <label for="colorPicker" class="form-label fw-semibold">Seleccionar color</label>
+            <input type="color" id="colorPicker" class="form-control form-control-color border-0 shadow-sm" value="#000000">
+          </div>
+
+          <!-- Sliders + Inputs -->
+          <div class="mb-3">
+            <label for="redRange" class="form-label fw-semibold text-danger">Rojo</label>
+            <input type="range" class="form-range slider-red" min="0" max="255" value="0" id="redRange">
+            <input type="number" class="form-control mt-2 shadow-sm" min="0" max="255" value="0" id="redInput">
+          </div>
+
+          <div class="mb-3">
+            <label for="greenRange" class="form-label fw-semibold text-success">Verde</label>
+            <input type="range" class="form-range slider-green" min="0" max="255" value="0" id="greenRange">
+            <input type="number" class="form-control mt-2 shadow-sm" min="0" max="255" value="0" id="greenInput">
+          </div>
+
+          <div class="mb-3">
+            <label for="blueRange" class="form-label fw-semibold text-primary">Azul</label>
+            <input type="range" class="form-range slider-blue" min="0" max="255" value="0" id="blueRange">
+            <input type="number" class="form-control mt-2 shadow-sm" min="0" max="255" value="0" id="blueInput">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
